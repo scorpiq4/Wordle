@@ -17,7 +17,7 @@ namespace Wordle
             Guesses = new Character[Options.Tries, Options.WordLength];
             CharactersPlayed = new Dictionary<char, Character>();
 
-            Words = Dictionary.Words.Where(i => i.Length == 5).ToArray();
+            Words = Dictionary.Words.Where(i => i.Length == Options.WordLength).ToArray();
 
             Word = Words[Utils.Random.Next(0, Words.Length)];
         }
@@ -35,7 +35,7 @@ namespace Wordle
         {
             var word = Word.ToArray();
 
-            // Exact Match
+            // Evaluate Exact Matches First
             for (var i = 0; i < Options.WordLength; i++)
             {
                 if (guessWord[i] == word[i])
@@ -45,7 +45,7 @@ namespace Wordle
                 }
             }
 
-            // Match or Eliminated
+            // Evaluate Matches and Eliminated
             for (var i = 0; i < Options.WordLength; i++)
             {
                 // Exact match already found
@@ -59,11 +59,12 @@ namespace Wordle
                     {
                         word[j] = ' ';
                         CharacterPlayed(i, CharacterStatus.Match);
+                        break;
                     }
                 }
 
                 // Eliminated
-                if ((Guesses[Tries - 1, i]?.Status ?? CharacterStatus.Unknown) == CharacterStatus.Unknown)
+                if (Guesses[Tries - 1, i] == null)
                     CharacterPlayed(i, CharacterStatus.Eliminated);
             }
 

@@ -12,10 +12,27 @@ namespace Wordle
 {
     public partial class WordleForm : Form
     {
+        private Dictionary<char, Button> _keyboard;
+        public WordleGame Game { get; private set; }
+
         public WordleForm()
         {
             InitializeComponent();
+            InitKeyboardDictionary();
 
+            KeyPreview = true;
+
+            NewGame();
+        }
+
+        protected override void OnShown(EventArgs e)
+        {
+            buttonEnter.Focus();
+            base.OnShown(e);
+        }
+
+        private void InitKeyboardDictionary()
+        {
             _keyboard = new Dictionary<char, Button>
             {
                 { 'A', buttonA },
@@ -45,21 +62,7 @@ namespace Wordle
                 { 'Y', buttonY },
                 { 'Z', buttonZ }
             };
-
-            KeyPreview = true;
-
-            NewGame();
         }
-
-        protected override void OnShown(EventArgs e)
-        {
-            buttonEnter.Focus();
-            base.OnShown(e);
-        }
-
-        private Dictionary<char, Button> _keyboard;
-
-        public WordleGame Game { get; private set; }
 
         private void NewGame()
         {
