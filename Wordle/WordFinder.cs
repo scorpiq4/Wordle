@@ -15,8 +15,10 @@ namespace Wordle
             {
                 for (int i = range.Item1; i < range.Item2; i++)
                 {
-                    var game = new WordFinder(new GameOptions { WordLength = 5, Tries = 6 });
-                    var guessWords = new System.Collections.Generic.List<string>();
+                    var gameOptions = new GameOptions { WordLength = 5, Tries = 6 };
+                    var word = default(string); // "FLUFF";
+                    var game = new WordFinder(gameOptions, word);
+                    var guessWords = new List<string>();
                     do
                     {
                         game.Tries++;
@@ -38,13 +40,13 @@ namespace Wordle
         public char[] MatchedCharacters { get; }
         public List<char> EliminatedCharacters { get; }
 
-        public WordFinder(GameOptions options)
+        public WordFinder(GameOptions options, string word = null)
         {
             Options = options;
 
             Words = Dictionary.Words.Where(i => i.Length == 5).ToArray();
 
-            Word = Words[Utils.Random.Next(0, Words.Length)];
+            Word = word ?? Words[Utils.Random.Next(0, Words.Length)];
 
             RequiredCharacters = new Dictionary<char, bool[]>();
             MatchedCharacters = Enumerable.Range(0, Options.WordLength).Select(i => ' ').ToArray();
