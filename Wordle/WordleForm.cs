@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -31,6 +32,7 @@ namespace Wordle
             base.OnShown(e);
         }
 
+        [MemberNotNull(nameof(_keyboard))]
         private void InitKeyboardDictionary()
         {
             _keyboard = new Dictionary<char, Button>
@@ -64,6 +66,7 @@ namespace Wordle
             };
         }
 
+        [MemberNotNull(nameof(Game))]
         private void NewGame()
         {
             Game = new WordleGame(new GameOptions { Tries = 6, WordLength = 5 });
@@ -86,7 +89,8 @@ namespace Wordle
 
         private void button_Click(object sender, EventArgs e)
         {
-            ProcessText((sender as Button).Text);
+            if (sender is Button button)
+                ProcessText(button.Text);
         }
 
         private void WordleForm_KeyPress(object sender, KeyPressEventArgs e)
@@ -190,7 +194,7 @@ namespace Wordle
 
         private Button GetGuessButton(int characterPosition)
         {
-            return tableLayoutPanelGuesses.GetControlFromPosition(characterPosition, Game.Tries - 1) as Button;
+            return (Button)tableLayoutPanelGuesses.GetControlFromPosition(characterPosition, Game.Tries - 1);
         }
 
         private Color GetColor(CharacterStatus status)

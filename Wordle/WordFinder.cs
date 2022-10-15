@@ -33,14 +33,14 @@ namespace Wordle
         public GameOptions Options { get; }
 
         public string[] Words { get; private set; }
-        public string Word { get; set; }
+        public string Word { get; }
         public int Tries { get; set; }
 
         public Dictionary<char, bool[]> RequiredCharacters { get; }
         public char[] MatchedCharacters { get; }
         public List<char> EliminatedCharacters { get; }
 
-        public WordFinder(GameOptions options, string word = null)
+        public WordFinder(GameOptions options, string? word = null)
         {
             Options = options;
 
