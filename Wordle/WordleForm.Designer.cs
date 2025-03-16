@@ -110,7 +110,7 @@ namespace Wordle
             this.buttonP.TabIndex = 9;
             this.buttonP.Text = "P";
             this.buttonP.UseVisualStyleBackColor = true;
-            this.buttonP.Click += new System.EventHandler(this.button_Click);
+            this.buttonP.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonO
             // 
@@ -122,7 +122,7 @@ namespace Wordle
             this.buttonO.TabIndex = 8;
             this.buttonO.Text = "O";
             this.buttonO.UseVisualStyleBackColor = true;
-            this.buttonO.Click += new System.EventHandler(this.button_Click);
+            this.buttonO.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonI
             // 
@@ -134,7 +134,7 @@ namespace Wordle
             this.buttonI.TabIndex = 7;
             this.buttonI.Text = "I";
             this.buttonI.UseVisualStyleBackColor = true;
-            this.buttonI.Click += new System.EventHandler(this.button_Click);
+            this.buttonI.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonU
             // 
@@ -146,7 +146,7 @@ namespace Wordle
             this.buttonU.TabIndex = 6;
             this.buttonU.Text = "U";
             this.buttonU.UseVisualStyleBackColor = true;
-            this.buttonU.Click += new System.EventHandler(this.button_Click);
+            this.buttonU.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonY
             // 
@@ -158,7 +158,7 @@ namespace Wordle
             this.buttonY.TabIndex = 5;
             this.buttonY.Text = "Y";
             this.buttonY.UseVisualStyleBackColor = true;
-            this.buttonY.Click += new System.EventHandler(this.button_Click);
+            this.buttonY.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonT
             // 
@@ -170,7 +170,7 @@ namespace Wordle
             this.buttonT.TabIndex = 4;
             this.buttonT.Text = "T";
             this.buttonT.UseVisualStyleBackColor = true;
-            this.buttonT.Click += new System.EventHandler(this.button_Click);
+            this.buttonT.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonR
             // 
@@ -182,7 +182,7 @@ namespace Wordle
             this.buttonR.TabIndex = 3;
             this.buttonR.Text = "R";
             this.buttonR.UseVisualStyleBackColor = true;
-            this.buttonR.Click += new System.EventHandler(this.button_Click);
+            this.buttonR.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonE
             // 
@@ -194,7 +194,7 @@ namespace Wordle
             this.buttonE.TabIndex = 2;
             this.buttonE.Text = "E";
             this.buttonE.UseVisualStyleBackColor = true;
-            this.buttonE.Click += new System.EventHandler(this.button_Click);
+            this.buttonE.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonW
             // 
@@ -206,7 +206,7 @@ namespace Wordle
             this.buttonW.TabIndex = 1;
             this.buttonW.Text = "W";
             this.buttonW.UseVisualStyleBackColor = true;
-            this.buttonW.Click += new System.EventHandler(this.button_Click);
+            this.buttonW.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonQ
             // 
@@ -218,7 +218,7 @@ namespace Wordle
             this.buttonQ.TabIndex = 0;
             this.buttonQ.Text = "Q";
             this.buttonQ.UseVisualStyleBackColor = true;
-            this.buttonQ.Click += new System.EventHandler(this.button_Click);
+            this.buttonQ.Click += new System.EventHandler(this.Button_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -259,7 +259,7 @@ namespace Wordle
             this.buttonJ.TabIndex = 9;
             this.buttonJ.Text = "J";
             this.buttonJ.UseVisualStyleBackColor = true;
-            this.buttonJ.Click += new System.EventHandler(this.button_Click);
+            this.buttonJ.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonH
             // 
@@ -271,7 +271,7 @@ namespace Wordle
             this.buttonH.TabIndex = 8;
             this.buttonH.Text = "H";
             this.buttonH.UseVisualStyleBackColor = true;
-            this.buttonH.Click += new System.EventHandler(this.button_Click);
+            this.buttonH.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonL
             // 
@@ -283,7 +283,7 @@ namespace Wordle
             this.buttonL.TabIndex = 7;
             this.buttonL.Text = "L";
             this.buttonL.UseVisualStyleBackColor = true;
-            this.buttonL.Click += new System.EventHandler(this.button_Click);
+            this.buttonL.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonK
             // 
@@ -295,7 +295,7 @@ namespace Wordle
             this.buttonK.TabIndex = 6;
             this.buttonK.Text = "K";
             this.buttonK.UseVisualStyleBackColor = true;
-            this.buttonK.Click += new System.EventHandler(this.button_Click);
+            this.buttonK.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonG
             // 
@@ -307,7 +307,7 @@ namespace Wordle
             this.buttonG.TabIndex = 5;
             this.buttonG.Text = "G";
             this.buttonG.UseVisualStyleBackColor = true;
-            this.buttonG.Click += new System.EventHandler(this.button_Click);
+            this.buttonG.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonS
             // 
@@ -319,7 +319,7 @@ namespace Wordle
             this.buttonS.TabIndex = 4;
             this.buttonS.Text = "S";
             this.buttonS.UseVisualStyleBackColor = true;
-            this.buttonS.Click += new System.EventHandler(this.button_Click);
+            this.buttonS.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonA
             // 
@@ -331,7 +331,7 @@ namespace Wordle
             this.buttonA.TabIndex = 3;
             this.buttonA.Text = "A";
             this.buttonA.UseVisualStyleBackColor = true;
-            this.buttonA.Click += new System.EventHandler(this.button_Click);
+            this.buttonA.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonF
             // 
@@ -343,7 +343,7 @@ namespace Wordle
             this.buttonF.TabIndex = 2;
             this.buttonF.Text = "F";
             this.buttonF.UseVisualStyleBackColor = true;
-            this.buttonF.Click += new System.EventHandler(this.button_Click);
+            this.buttonF.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonD
             // 
@@ -355,7 +355,7 @@ namespace Wordle
             this.buttonD.TabIndex = 1;
             this.buttonD.Text = "D";
             this.buttonD.UseVisualStyleBackColor = true;
-            this.buttonD.Click += new System.EventHandler(this.button_Click);
+            this.buttonD.Click += new System.EventHandler(this.Button_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -415,7 +415,7 @@ namespace Wordle
             this.buttonN.TabIndex = 9;
             this.buttonN.Text = "N";
             this.buttonN.UseVisualStyleBackColor = true;
-            this.buttonN.Click += new System.EventHandler(this.button_Click);
+            this.buttonN.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonB
             // 
@@ -427,7 +427,7 @@ namespace Wordle
             this.buttonB.TabIndex = 8;
             this.buttonB.Text = "B";
             this.buttonB.UseVisualStyleBackColor = true;
-            this.buttonB.Click += new System.EventHandler(this.button_Click);
+            this.buttonB.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonEnter
             // 
@@ -439,7 +439,7 @@ namespace Wordle
             this.buttonEnter.TabIndex = 7;
             this.buttonEnter.Text = "Enter";
             this.buttonEnter.UseVisualStyleBackColor = true;
-            this.buttonEnter.Click += new System.EventHandler(this.button_Click);
+            this.buttonEnter.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonM
             // 
@@ -451,7 +451,7 @@ namespace Wordle
             this.buttonM.TabIndex = 6;
             this.buttonM.Text = "M";
             this.buttonM.UseVisualStyleBackColor = true;
-            this.buttonM.Click += new System.EventHandler(this.button_Click);
+            this.buttonM.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonV
             // 
@@ -463,7 +463,7 @@ namespace Wordle
             this.buttonV.TabIndex = 5;
             this.buttonV.Text = "V";
             this.buttonV.UseVisualStyleBackColor = true;
-            this.buttonV.Click += new System.EventHandler(this.button_Click);
+            this.buttonV.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonZ
             // 
@@ -475,7 +475,7 @@ namespace Wordle
             this.buttonZ.TabIndex = 4;
             this.buttonZ.Text = "Z";
             this.buttonZ.UseVisualStyleBackColor = true;
-            this.buttonZ.Click += new System.EventHandler(this.button_Click);
+            this.buttonZ.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonDel
             // 
@@ -487,7 +487,7 @@ namespace Wordle
             this.buttonDel.TabIndex = 3;
             this.buttonDel.Text = "Back";
             this.buttonDel.UseVisualStyleBackColor = true;
-            this.buttonDel.Click += new System.EventHandler(this.button_Click);
+            this.buttonDel.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonC
             // 
@@ -499,7 +499,7 @@ namespace Wordle
             this.buttonC.TabIndex = 2;
             this.buttonC.Text = "C";
             this.buttonC.UseVisualStyleBackColor = true;
-            this.buttonC.Click += new System.EventHandler(this.button_Click);
+            this.buttonC.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonX
             // 
@@ -511,7 +511,7 @@ namespace Wordle
             this.buttonX.TabIndex = 1;
             this.buttonX.Text = "X";
             this.buttonX.UseVisualStyleBackColor = true;
-            this.buttonX.Click += new System.EventHandler(this.button_Click);
+            this.buttonX.Click += new System.EventHandler(this.Button_Click);
             // 
             // tableLayoutPanelGuesses
             // 

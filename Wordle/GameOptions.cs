@@ -1,8 +1,7 @@
-﻿namespace Wordle
+﻿namespace Wordle;
+
+public class GameOptions
 {
-    public class GameOptions
-    {
-        public int WordLength { get; set; }
-        public int Tries { get; set; }
-    }
+    public int WordLength { get; set; }
+    public int Tries { get; set; }
 }

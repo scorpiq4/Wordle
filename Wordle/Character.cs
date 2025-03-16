@@ -1,14 +1,8 @@
-﻿namespace Wordle
+﻿namespace Wordle;
+
+public class Character(char @char, CharacterStatus status)
 {
-    public class Character
-    {
-        public Character(char @char, CharacterStatus status)
-        {
-            Char = @char;
-            Status = status;
-        }
-        public char Char { get; }
-        public CharacterStatus Status { get; set; }
-        public override string ToString() => $"{Char} - {Status}";
-    }
+    public char Char { get; } = @char;
+    public CharacterStatus Status { get; set; } = status;
+    public override string ToString() => $"{Char} - {Status}";
 }

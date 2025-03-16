@@ -1,10 +1,9 @@
-﻿namespace Wordle
+﻿namespace Wordle;
+
+public enum CharacterStatus
 {
-    public enum CharacterStatus
-    {
-        Unknown,
-        ExactMatch,
-        Match,
-        Eliminated
-    }
+    Unknown,
+    ExactMatch,
+    Match,
+    Eliminated
 }
