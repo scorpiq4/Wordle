@@ -7,29 +7,6 @@ namespace Wordle;
 
 public class WordFinder
 {
-    public static void Test()
-    {
-        var tries = new System.Collections.Concurrent.ConcurrentBag<int>();
-
-        Parallel.ForEach(System.Collections.Concurrent.Partitioner.Create(0, 10000), (range, state) =>
-        {
-            for (int i = range.Item1; i < range.Item2; i++)
-            {
-                var gameOptions = new GameOptions { WordLength = 5, Tries = 6 };
-                var word = default(string); // "FLUFF";
-                var game = new WordFinder(gameOptions, word);
-                var guessWords = new List<string>();
-                do
-                {
-                    game.Tries++;
-                    guessWords.Add(game.CalculateGuessWord());
-                } while (!game.EvaluateGuessWord(guessWords.Last()));
-                tries.Add(game.Tries);
-            }
-        });
-        var avg = tries.Average();
-    }
-
     public GameOptions Options { get; }
 
     public string[] Words { get; private set; }
@@ -44,7 +21,7 @@ public class WordFinder
     {
         Options = options;
 
-        Words = [.. Dictionary.Words.Where(i => i.Length == 5)];
+        Words = [.. Dictionary.Words.Where(i => i.Length == options.WordLength)];
 
         Word = word ?? Words[Random.Shared.Next(0, Words.Length)];
 
@@ -188,6 +165,6 @@ public class WordFinder
             return runAgain;
         }
 
-        return Word == guessWord;
+        return guessWord == Word;
     }
 }
